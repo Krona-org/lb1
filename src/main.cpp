@@ -34,7 +34,6 @@ void findStudentByName(const std::string& name) const
     bool found = false;
     for (const auto& student : students)
     {
-        // проверяем, что имя начинается с введённой строки
         if (student.name.find(name) == 0)
         {
             std::cout << "Found: " 
@@ -75,13 +74,13 @@ int main()
     manager.displayStudents();
 
     std::cout << "\nSearching for \"li\":\n";
-    manager.findStudentByName("li"); // найдёт Alice и Charlie
+    manager.findStudentByName("li"); 
 
     std::cout << "\nSearching for \"Bob\":\n";
-    manager.findStudentByName("б"); // найдёт Bob
+    manager.findStudentByName("б"); 
 
     std::cout << "\nSearching for \"Zoe\":\n";
-    manager.findStudentByName("Zoe"); // никого не найдёт
+    manager.findStudentByName("Zoe"); 
 
     return 0;
 }
