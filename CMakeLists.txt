@@ -13,7 +13,14 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(fmt)
 
-add_executable(rooster src/main.cpp)
-
+add_executable(rooster
+    src/main.cpp 
+    src/array_utils.cpp
+    src/array_utils.h
+    src/matrix_utils.cpp
+    src/matrix_utils.h
+    src/student_utils.cpp
+    src/student_utils.h
+)
 
 target_link_libraries(rooster PRIVATE fmt::fmt)
