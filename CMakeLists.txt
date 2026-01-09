@@ -6,6 +6,9 @@ set(CMAKE_CXX_VERSION 17)
 set(CMAKE_CXX_VERSION_REQUIRED ON)
 set(CMAKE_CXX_EXTENTION OFF)
 
-add_executable(app WIN32 src/main.cpp)
+add_executable(app src/main.cpp     
+                src/Student.h
+                src/Student.cpp 
+                )
 
 target_compile_definitions(app PRIVATE UNICODE _UNICODE)
